@@ -1,0 +1,3 @@
+[submodule "Demo-Widget"]
+	path = Demo-Widget
+	url = git@github.com:MicroEJ/Demo-Widget.git
