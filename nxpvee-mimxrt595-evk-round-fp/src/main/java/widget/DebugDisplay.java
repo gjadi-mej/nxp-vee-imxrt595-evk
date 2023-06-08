@@ -11,7 +11,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 import javax.imageio.ImageIO;
 
@@ -54,12 +58,15 @@ public class DebugDisplay extends Display implements MouseListener {
 	private final File flushDir = new File(rootDir, "flush");
 	private final File summaryFile = new File(rootDir, "summary.txt");
 	private final File fullOpFile = new File(rootDir, "fullOp.txt");
+	private final File confJs = new File(flushDir, "conf.js");
 
 	private PrintStream summary;
 
 	private int flushCount;
 
 	private PrintStream fullOp;
+
+	private int nOfFlush;
 
 	public DebugDisplay() {
 		this.showCoordinates = true;
@@ -89,6 +96,14 @@ public class DebugDisplay extends Display implements MouseListener {
 		LLUIPainter.setDrawer(drawer);
 		System.out.println("Drawer Area: " + drawer.getDrawerArea());
 		summary.append("Drawer Area: " + drawer.getDrawerArea() + "\n");
+
+		try (InputStream input = this.getClass().getClassLoader()
+				.getResourceAsStream("UIFlushVisualizer.html")) {
+			Files.copy(input, Path.of(rootDir.getAbsolutePath(), "UIFlushVisualizer.html"),
+					StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -145,6 +160,13 @@ public class DebugDisplay extends Display implements MouseListener {
 		File outputTxt = new File(flushDir, "flush-" + flushCount + ".txt");
 		try (PrintStream output = new PrintStream(new FileOutputStream(outputTxt))) {
 			output.print(sb.toString());
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		this.nOfFlush++;
+		try (PrintStream output = new PrintStream(new FileOutputStream(confJs))) {
+			output.print("function init() { window.total = " + this.nOfFlush + "; }");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
