@@ -1,3 +1,6 @@
 [submodule "Demo-Widget"]
 	path = Demo-Widget
 	url = git@github.com:MicroEJ/Demo-Widget.git
+[submodule "Demo-Wearable"]
+	path = Demo-Wearable
+	url = git@github.com:MicroEJ/Demo-Wearable.git
