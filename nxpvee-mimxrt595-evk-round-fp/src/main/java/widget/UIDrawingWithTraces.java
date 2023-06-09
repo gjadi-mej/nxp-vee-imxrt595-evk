@@ -205,6 +205,8 @@ public class UIDrawingWithTraces implements UIDrawingDefault {
 		// Round display, area is that of a circle.
 		return (int) (Math.pow(this.displayWidth / 2, 2) * Math.PI);
 
+		// Rectangular display
+		// return this.displayWidth * this.displayHeight;
 	}
 
 	/**
