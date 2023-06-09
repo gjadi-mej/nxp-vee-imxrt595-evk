@@ -76,9 +76,6 @@ public class DebugDisplay extends Display implements MouseListener {
 	public void start() {
 		super.start();
 
-		// XXX Is this the correct way to get the width/height of the display? I don't know why I can't get it from the
-		// width/height @WidgetAttribute.
-
 		System.out.println("summary=" + summaryFile.getAbsolutePath());
 		System.out.println("fullOp=" + fullOpFile.getAbsolutePath());
 		flushDir.mkdirs();
@@ -89,6 +86,8 @@ public class DebugDisplay extends Display implements MouseListener {
 			e.printStackTrace();
 			throw new RuntimeException(e);
 		}
+		// XXX Is this the correct way to get the width/height of the display? I don't
+		// know how I can get it from the width/height @WidgetAttribute.
 		Image skin = super.getCurrentSkin();
 		this.displayWidth = skin.getWidth();
 		this.displayHeight = skin.getHeight();
