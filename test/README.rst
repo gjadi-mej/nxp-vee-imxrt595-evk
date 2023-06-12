@@ -19,9 +19,7 @@ Installation
 
 3. Update the front-panel definition to use the `DebugDisplay` instead of the standard `Display`:
 
-.. code-block:: java
-    :emphasize-lines: 3
-
+::
     <device name="NXP MIMXRT595" skin="Board.png">
         <!-- Original display    <ej.fp.widget.Display x="41" y="33" width="392" height="392" filter="mask_392.png" /> -->
         <widget.DebugDisplay x="41" y="33" width="392" height="392" filter="mask_392.png" />
