@@ -7,9 +7,15 @@ Overview
 Installation
 ------------
 
+`<src/main/java/widget/DebugDisplay.java>`__
+`src/main/java/widget/DebugDisplay.java`__
+`src/main/java/widget/DebugDisplay.java`_
+`<src/main/java/widget/DebugDisplay.java>`_
+`DebugDisplay.java <src/main/java/widget/DebugDisplay.java>`_
+
 1. Copy the following classes into the front-panel source folder:
 
-  - `src/main/java/widget/DebugDisplay.java`__
+  - `<src/main/java/widget/DebugDisplay.java>`__
   - `src/main/java/widget/UIDrawingWithTraces.java`__
   - NB: The VEE Port used in this example has a round display, its display area is computed accordingly.
     If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `src/main/java/widget/UIDrawingWithTraces.java#L206`__
