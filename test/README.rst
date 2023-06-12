@@ -19,16 +19,16 @@ Installation
 
 3. Update the front-panel definition to use the `DebugDisplay` instead of the standard `Display`:
 
-   .. code-block:: java
-       :emphasize-lines: 3
-   
-       <device name="NXP MIMXRT595" skin="Board.png">
-           <!-- Original display    <ej.fp.widget.Display x="41" y="33" width="392" height="392" filter="mask_392.png" /> -->
-           <widget.DebugDisplay x="41" y="33" width="392" height="392" filter="mask_392.png" />
-           <ej.fp.widget.Pointer x="41" y="33" width="392" height="392" filter="mask_392.png" touch="true"/>
-           <ej.fp.widget.Button label="0" x="823" y="193" skin="button1.png" pushedSkin="button1_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
-           <ej.fp.widget.Button label="1" x="823" y="228" skin="button2.png" pushedSkin="button2_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
-       </device>
+.. code-block:: java
+    :emphasize-lines: 3
+
+    <device name="NXP MIMXRT595" skin="Board.png">
+        <!-- Original display    <ej.fp.widget.Display x="41" y="33" width="392" height="392" filter="mask_392.png" /> -->
+        <widget.DebugDisplay x="41" y="33" width="392" height="392" filter="mask_392.png" />
+        <ej.fp.widget.Pointer x="41" y="33" width="392" height="392" filter="mask_392.png" touch="true"/>
+        <ej.fp.widget.Button label="0" x="823" y="193" skin="button1.png" pushedSkin="button1_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
+        <ej.fp.widget.Button label="1" x="823" y="228" skin="button2.png" pushedSkin="button2_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
+    </device>
 
 4. Rebuild the VEE Port or configure the launcher to use the front-panel without having to rebuild the VEE Port (cf [the documentation](https://docs.microej.com/en/latest/VEEPortingGuide/frontpanel.html#advanced-test-the-front-panel-project))
    .. image:: images/ui-flush-visualizer-fp-launcher.png
