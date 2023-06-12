@@ -7,21 +7,15 @@ Overview
 Installation
 ------------
 
-`<src/main/java/widget/DebugDisplay.java>`__
-`src/main/java/widget/DebugDisplay.java`__
-`src/main/java/widget/DebugDisplay.java`_
-`<src/main/java/widget/DebugDisplay.java>`_
-`DebugDisplay.java <src/main/java/widget/DebugDisplay.java>`_
-
 1. Copy the following classes into the front-panel source folder:
 
   - `<src/main/java/widget/DebugDisplay.java>`__
-  - `src/main/java/widget/UIDrawingWithTraces.java`__
+  - `<src/main/java/widget/UIDrawingWithTraces.java>`__
   - NB: The VEE Port used in this example has a round display, its display area is computed accordingly.
-    If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `src/main/java/widget/UIDrawingWithTraces.java#L206`__
+    If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `<src/main/java/widget/UIDrawingWithTraces.java#L206>`__
 2. Copy the following html page into the front-panel resources folder:
 
-  - `src/main/resources/UIFlushVisualizer.html`__
+  - `<src/main/resources/UIFlushVisualizer.html>`__
 
 3. Update the front-panel definition to use the `DebugDisplay` instead of the standard `Display`:
 
@@ -40,7 +34,7 @@ Installation
    .. image:: images/ui-flush-visualizer-fp-launcher.png
 
 By default, the output is configured to `C:\UIFlushVisualizer`.
-Set a different location by customizing `rootDir` value: `src/main/java/widget/DebugDisplay.java#L57`__
+Set a different location by customizing `rootDir` value: `<src/main/java/widget/DebugDisplay.java#L57>`__
 
 Usage
 -----
