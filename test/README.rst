@@ -9,13 +9,13 @@ Installation
 
 1. Copy the following classes into the front-panel source folder:
 
-  - `<src/main/java/widget/DebugDisplay.java>`__
-  - `<src/main/java/widget/UIDrawingWithTraces.java>`__
-  - NB: The VEE Port used in this example has a round display, its display area is computed accordingly.
+   - `<src/main/java/widget/DebugDisplay.java>`__
+   - `<src/main/java/widget/UIDrawingWithTraces.java>`__
+   - NB: The VEE Port used in this example has a round display, its display area is computed accordingly.
     If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `<src/main/java/widget/UIDrawingWithTraces.java#L206>`__
 2. Copy the following html page into the front-panel resources folder:
 
-  - `<src/main/resources/UIFlushVisualizer.html>`__
+   - `<src/main/resources/UIFlushVisualizer.html>`__
 
 3. Update the front-panel definition to use the `DebugDisplay` instead of the standard `Display`:
 
