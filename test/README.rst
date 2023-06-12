@@ -23,7 +23,10 @@ Installation
 
        <device name="NXP MIMXRT595" skin="Board.png">
            <!-- Original display    <ej.fp.widget.Display x="41" y="33" width="392" height="392" filter="mask_392.png" /> -->
+
+           <!-- Overriden Display -->
            <widget.DebugDisplay x="41" y="33" width="392" height="392" filter="mask_392.png" />
+
            <ej.fp.widget.Pointer x="41" y="33" width="392" height="392" filter="mask_392.png" touch="true"/>
            <ej.fp.widget.Button label="0" x="823" y="193" skin="button1.png" pushedSkin="button1_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
            <ej.fp.widget.Button label="1" x="823" y="228" skin="button2.png" pushedSkin="button2_pushed.png" listenerClass="ej.fp.widget.ButtonListener"/>
