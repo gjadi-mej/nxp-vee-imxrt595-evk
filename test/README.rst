@@ -4,6 +4,19 @@
 Overview
 ========
 
+Building smooth and visually appealing UI applications require a keen focus on performance.
+To achieve efficient UI rendering, minimizing unnecessary work that consumes valuable CPU time is essential.
+
+Here are examples of the UI Flush Visualizer in action:
+
++----------------------------------------------------------------+--------------------------------------------------------------------+
+|Simple GFX                                                      | Demo Wearable                                                      |
++================================================================+====================================================================+
+| .. image:: images/small-demo-ui-flush-visualizer-simpleGFX.png | .. image:: images/small-demo-ui-flush-visualizer-demo-wearable.png |
++----------------------------------------------------------------+--------------------------------------------------------------------+
+
+Please refer to the `documentation <https://docs.microej.com/en/latest/ApplicationDeveloperGuide/UI/Advanced/how-to-microui-flush-visualizer.html>`__.
+
 Installation
 ------------
 
