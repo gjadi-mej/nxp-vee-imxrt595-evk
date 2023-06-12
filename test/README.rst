@@ -8,11 +8,15 @@ Installation
 ------------
 
 1. Copy the following classes into the front-panel source folder:
+
     - `src/main/java/widget/DebugDisplay.java`__
     - `src/main/java/widget/UIDrawingWithTraces.java`__
-    - NB: The VEE Port used in this example has a round display, its display area is computed accordingly. If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `src/main/java/widget/UIDrawingWithTraces.java#L206`__
+    - NB: The VEE Port used in this example has a round display, its display area is computed accordingly.
+      If your VEE Port has a different shape, such as a rectangular display, update the computation has required: `src/main/java/widget/UIDrawingWithTraces.java#L206`__
 2. Copy the following html page into the front-panel resources folder:
+
     - `src/main/resources/UIFlushVisualizer.html`__
+
 3. Update the front-panel definition to use the `DebugDisplay` instead of the standard `Display`:
 
    .. code-block:: java
@@ -29,7 +33,8 @@ Installation
 4. Rebuild the VEE Port or configure the launcher to use the front-panel without having to rebuild the VEE Port (cf [the documentation](https://docs.microej.com/en/latest/VEEPortingGuide/frontpanel.html#advanced-test-the-front-panel-project))
    .. image:: images/ui-flush-visualizer-fp-launcher.png
 
-By default, the output is configured to `C:\UIFlushVisualizer`. Set a different location by customizing `rootDir` value: `src/main/java/widget/DebugDisplay.java#L57`__
+By default, the output is configured to `C:\UIFlushVisualizer`.
+Set a different location by customizing `rootDir` value: `src/main/java/widget/DebugDisplay.java#L57`__
 
 Usage
 -----
