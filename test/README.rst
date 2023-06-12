@@ -43,7 +43,8 @@ Installation
        }
 
 5. Rebuild the VEE Port or configure the launcher to use the front-panel without having to rebuild the VEE Port (cf [the documentation](https://docs.microej.com/en/latest/VEEPortingGuide/frontpanel.html#advanced-test-the-front-panel-project))
-   .. image:: images/ui-flush-visualizer-fp-launcher.png
+
+.. image:: images/ui-flush-visualizer-fp-launcher.png
 
 By default, the output is configured to `C:\UIFlushVisualizer`.
 Set a different location by customizing `rootDir` value: `<src/main/java/widget/DebugDisplay.java#L57>`__
