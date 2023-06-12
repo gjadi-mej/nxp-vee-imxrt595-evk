@@ -42,7 +42,7 @@ Installation
            // return this.displayWidth * this.displayHeight;
        }
 
-5. Rebuild the VEE Port or configure the launcher to use the front-panel without having to rebuild the VEE Port (cf `the documentation <https://docs.microej.com/en/latest/VEEPortingGuide/frontpanel.html#advanced-test-the-front-panel-project>`)
+5. Rebuild the VEE Port or configure the launcher to use the front-panel without having to rebuild the VEE Port (cf `the documentation <https://docs.microej.com/en/latest/VEEPortingGuide/frontpanel.html#advanced-test-the-front-panel-project>`__)
 
    .. image:: images/ui-flush-visualizer-fp-launcher.png
 
@@ -52,7 +52,7 @@ Set a different location by customizing `rootDir` value: `<src/main/java/widget/
 Usage
 -----
 
-Please refer to the `documentation <https://docs.microej.com/en/latest/ApplicationDeveloperGuide/UI/Advanced/how-to-microui-flush-visualizer.html>`.
+Please refer to the `documentation <https://docs.microej.com/en/latest/ApplicationDeveloperGuide/UI/Advanced/how-to-microui-flush-visualizer.html>`__.
 
 Requirements
 ------------
